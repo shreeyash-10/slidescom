@@ -12,7 +12,7 @@ const posts = [
     summary:
       "Upload a lecture deck, auto-extract the outline, and generate a clear voiceover per slide. This guide covers pacing, emphasis, and how to add timed pauses for questions.",
     content: [
-      "Start by trimming each slide to one idea and a single headline. SlidesOne reads clear structure better than dense paragraphs, so move supporting text into speaker notes and let the narration explain it.",
+      "Start by trimming each slide to one idea and a single headline. slidesop reads clear structure better than dense paragraphs, so move supporting text into speaker notes and let the narration explain it.",
       "Next, decide your pacing. For lecture slides, aim for 18 to 28 seconds per slide. If a slide needs more time, split it into two and keep the narration crisp. The listener should never feel rushed.",
       "Finally, insert a pause after every section break. A short prompt like \"Take a moment to write this down\" makes the experience feel guided and improves retention without extra editing.",
     ],
@@ -232,7 +232,7 @@ export function BlogsPage() {
           <div className="mb-12 grid gap-6 md:grid-cols-[1.2fr_0.8fr] md:gap-12">
             <div>
               <h1 className="mb-3 font-sans text-4xl font-light leading-[1.1] tracking-tight text-foreground md:text-6xl lg:text-7xl">
-                SlidesOne blog
+                slidesop blog
                 <br />
                 for narrated decks
               </h1>
@@ -262,7 +262,7 @@ export function BlogsPage() {
                 }}
                 className={`group flex h-full cursor-pointer flex-col justify-between rounded-2xl border bg-foreground/5 p-6 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
                   expandedIndex === index
-                    ? "border-foreground/40 bg-foreground/10 shadow-[0_25px_60px_rgba(0,0,0,0.35)]"
+                    ? "border-foreground/40 bg-foreground/10 shadow-[0_25px_60px_rgba(0,0,0,0.35)] md:col-span-2 md:min-h-[70vh]"
                     : "border-foreground/10 hover:border-foreground/30 hover:bg-foreground/10"
                 }`}
               >

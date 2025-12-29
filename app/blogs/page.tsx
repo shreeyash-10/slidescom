@@ -2,12 +2,12 @@ import type { Metadata } from "next"
 import { BlogsPage } from "./blogs-page"
 
 export const metadata: Metadata = {
-  title: "Slidesop Blog | SlidesOne Insights",
+  title: "Slidesop Blog | slidesop Insights",
   description:
     "Practical guides and playbooks for AI slide narration, presentation voiceovers, and explainer workflows.",
   alternates: { canonical: "/blogs" },
   openGraph: {
-    title: "Slidesop Blog | SlidesOne Insights",
+    title: "Slidesop Blog | slidesop Insights",
     description:
       "Practical guides and playbooks for AI slide narration, presentation voiceovers, and explainer workflows.",
     url: "/blogs",

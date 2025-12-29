@@ -231,22 +231,35 @@ export default function Home() {
         </button>
 
         <div className="hidden items-center gap-8 md:flex">
-          {["Home", "Product", "Use Cases", "Pricing", "Contact"].map((item, index) => (
+          {[
+            { label: "Home", index: 0 },
+            { label: "Product", index: 1 },
+            { label: "Use Cases", index: 2 },
+            { label: "Pricing", index: 3 },
+            { label: "Contact", index: 4 },
+          ].map((item) => (
             <button
-              key={item}
-              onClick={() => scrollToSection(index)}
+              key={item.label}
+              onClick={() => scrollToSection(item.index)}
               className={`group relative font-sans text-sm font-medium transition-colors ${
-                currentSection === index ? "text-foreground" : "text-foreground/80 hover:text-foreground"
+                currentSection === item.index ? "text-foreground" : "text-foreground/80 hover:text-foreground"
               }`}
             >
-              {item}
+              {item.label}
               <span
                 className={`absolute -bottom-1 left-0 h-px bg-foreground transition-all duration-300 ${
-                  currentSection === index ? "w-full" : "w-0 group-hover:w-full"
+                  currentSection === item.index ? "w-full" : "w-0 group-hover:w-full"
                 }`}
               />
             </button>
           ))}
+          <a
+            href="/blogs"
+            className="group relative font-sans text-sm font-medium text-foreground/80 transition-colors hover:text-foreground"
+          >
+            Blogs
+            <span className="absolute -bottom-1 left-0 h-px w-0 bg-foreground transition-all duration-300 group-hover:w-full" />
+          </a>
         </div>
 
         <MagneticButton variant="secondary" onClick={() => scrollToSection(4)}>
@@ -287,7 +300,7 @@ export default function Home() {
                 variant="primary"
                 onClick={() => window.open("https://v0.app/templates/R3n0gnvYFbO", "_blank")}
               >
-                Create with SlidesOne
+                Create with slidesop
               </MagneticButton>
               <MagneticButton size="lg" variant="secondary" onClick={() => scrollToSection(2)}>
                 Watch Sample Explanation

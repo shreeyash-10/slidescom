@@ -19,7 +19,7 @@ export function ServicesSection() {
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
             Use cases
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Where SlidesOne is used</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Where slidesop is used</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">

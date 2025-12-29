@@ -48,7 +48,7 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
           {/* Right side - Stats with creative layout */}
           <div className="flex flex-col justify-center space-y-6 md:space-y-12">
             {[
-              { value: "Free", label: "Starter", sublabel: "For trying SlidesOne", direction: "right" },
+              { value: "Free", label: "Starter", sublabel: "For trying slidesop", direction: "right" },
               { value: "Pro", label: "Usage-based", sublabel: "Pay for what you explain", direction: "left" },
               { value: "Enterprise", label: "Custom", sublabel: "For teams & training", direction: "right" },
             ].map((stat, i) => {
